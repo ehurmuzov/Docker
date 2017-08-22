@@ -6,7 +6,7 @@
 #
 # 
 
-FROM realsoft/ubuntu-core:15.04
+FROM realsoft/ubuntu-core:16.04.3
 
 MAINTAINER Emil Hurmuzov, emil@hurmuzov.com
 
