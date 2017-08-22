@@ -2,11 +2,17 @@
 set -e
 set -x
 
-VER=14.04.3
-VERSHORT=$(echo $VER | sed 's/\(^[0-9][0-9]*\.[0-9][0-9]*\).*/\1/g')
-FILE=ubuntu-core-${VER}-core-amd64.tar.gz
-URL=http://cdimage.ubuntu.com/ubuntu-core/releases/${VERSHORT}/release/${FILE}
-SHA256SUMURL=http://cdimage.ubuntu.com/ubuntu-core/releases/${VERSHORT}/release/SHA256SUMS
+VER=16.04.3
+#VERSHORT=$(echo $VER | sed 's/\(^[0-9][0-9]*\.[0-9][0-9]*\).*/\1/g')
+
+
+#FILE=ubuntu-core-${VER}-core-amd64.tar.gz
+#URL=http://cdimage.ubuntu.com/ubuntu-core/releases/${VERSHORT}/release/${FILE}
+#SHA256SUMURL=http://cdimage.ubuntu.com/ubuntu-core/releases/${VERSHORT}/release/SHA256SUMS
+
+FILE=ubuntu-xenial-core-cloudimg-amd64-root.tar.gz
+SHA256SUMURL=https://partner-images.canonical.com/core/xenial/current/SHA256SUMS
+URL=https://partner-images.canonical.com/core/xenial/current/ubuntu-xenial-core-cloudimg-amd64-root.tar.gz
 
 check()
 {
